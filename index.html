@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#712cf9">
+    <title>HamaraAwaz: Advancing Low-Latency Streaming TTS for Multilingual Speech in Indian Languages</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .title-section {
+            background-color: #712cf9;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .author-section,
+        .accepted-section {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .author-info p {
+            font-size: 1.1rem;
+            margin-bottom: 0;
+        }
+
+        .abstract-section,
+        .proposed-method-section,
+        .table-section {
+            margin: 20px 0;
+        }
+
+        .table-section h3 {
+            margin-bottom: 20px;
+        }
+
+        .figure img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .table {
+            margin: auto;
+            width: 90%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <!-- Title Section -->
+        <div class="title-section">
+            <h1 class="display-4">
+                HamaraAwaz: Advancing Low-Latency Streaming TTS for Multilingual Speech in Indian Languages
+            </h1>
+        </div>
+
+        <!-- Author Section -->
+        <div class="author-section">
+            <div class="author-info">
+                <p class="lead">
+                    Neil Shah<sup>1,2</sup>, Parth Khadse<sup>3</sup>, Shirish Karande<sup>2</sup>, Sunil Kumar Kopparapu<sup>3</sup>
+                </p>
+                <p><sup>1</sup>International Institute of Information Technology, Hyderabad, India</p>
+                <p><sup>2</sup>TCS Research, Pune, India</p>
+                <p><sup>3</sup>TCS Research, Mumbai, India</p>
+            </div>
+        </div>
+
+        <!-- Acceptance Section -->
+        <div class="accepted-section">
+            <h4>Accepted at LIMMITS Signal Processing Grand Challenge for IEEE ICASSP 2025</h4>
+            <p>International Conference on Acoustics, Speech, and Signal Processing</p>
+            <p>Hyderabad, India</p>
+        </div>
+
+        <!-- Abstract Section -->
+        <div class="abstract-section">
+            <h3>Abstract:</h3>
+            <p class="fs-5">
+                We present a multilingual, multi-speaker, low-latency speech synthesis system developed by the HamaraAwaz team for Track 1 of the LIMMITS’25 challenge. To improve speaker similarity and naturalness in Indic languages, we build on ParrotTTS. We utilize disentangled self-supervised speech representations and incorporate enhancements such as Byte-Pair Encoding for text representation to reduce latency and relative positional representations to enhance speech quality. The proposed model achieved a naturalness Mean Opinion Score (MOS) of 3.51 and a speaker similarity score of 3.53 in the LIMMITS’25 grand challenge held as part of ICASSP-25.
+            </p>
+        </div>
+
+        <!-- Proposed Method Section -->
+        <div class="row">
+            <h3> Proposed Method</h4>
+        </div>
+        <div class="row p-2"></div>
+        <div class="row">
+            <figure class="figure text-center">
+                <img src="teaser.png" alt="..." class="figure-img" style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
+                <figcaption class="figure-caption text-center">HamaraAwaz architecture for training and inference stages.</figcaption>
+            </figure>
+        </div>
+
+</body>
+</html>
