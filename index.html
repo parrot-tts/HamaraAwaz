@@ -49,8 +49,28 @@
         }
 
         .table {
-            margin: auto;
-            width: 90%;
+        margin: auto;
+        width: 90%;
+        table-layout: fixed;
+        }
+
+        .table th,
+        .table td {
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .table th:nth-child(2),
+        .table td:nth-child(2) {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 250px; /* Adjust this value as needed */
+        }
+
+        .table td audio {
+            display: inline-block;
+            max-width: 100%;
         }
     </style>
 </head>
@@ -104,9 +124,6 @@
             </figure>
         </div>
 
-        <div class="row">
-            <h3>Comparing samples on USC-TIMIT MRI dataset</h3>
-        </div>
         <div class="row d-flex ">
             <table class="table  m-2">
                 <thead>
